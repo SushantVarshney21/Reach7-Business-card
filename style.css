@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body , html{
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+}
+
+#main{
+    max-width: 40%;
+    background-color: cadetblue;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slide-con{
+    width: 90%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-con .slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1s ease;
+}
+
+.btns{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.btns button{
+    margin: 12px;
+    padding: 10px 14px;
+    background-color: aqua;
+    border: none;
+    border-radius: 8px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.btns button:hover{
+    background-color: rgb(108, 238, 238);
+
+}
+
+#hero{
+    width: 90%;
+    padding: 80px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top-right-radius: 120px;
+}
+
+#hero .img{
+    width: 200px;
+    height: 200px;
+    padding: 18px;
+    border: 1px solid rebeccapurple;
+    border-radius:50% ;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero .img img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+#hero h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 12px 0px;
+}
+
+#hero h4{
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+#hero p{
+    font-size: 20px;
+    margin: 16px;
+}
+
+#hero .social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+#hero .social-icon i{
+    font-size: 22px;
+    background-color: cadetblue;
+    color: #000;
+    padding: 12px;
+    border-radius: 50%;
+    margin-left: 12px;
+    transition: 0.3s ease;
+}
+#hero .social-icon i:hover{
+    scale: 1.2;
+}
+
+#hero .info{
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#hero .info p{
+    text-align: center;
+}
+#hero form{
+    width: 100%;
+    margin-top: 18px;
+}
+#hero form input{
+    width: 50%;
+    padding:  14px;
+    border: 1px solid rgba(128, 128, 128, 0.308);
+    border-radius: 12px 0px 0px 12px ;
+    outline: none;
+}
+#hero form input[type="submit"]{
+    border-radius: 0px 12px 12px 0px;
+    /* color: #fff; */
+    background-color: aquamarine;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+#hero form input[type="submit"]:hover{
+    background-color: rgb(64, 206, 158);
+
+}
+#hero .btns button{
+    margin-top: 22px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#about{
+    width: 90%;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    margin-top: 22px;
+    border-top-left-radius: 45px ;
+    border-bottom-right-radius: 45px;
+}
+
+#about h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0px 0px 16px;
+}
+#about p{
+    margin: 14px 0px;
+    line-height: 22px;
+}
+
+#about ul{
+    list-style: none;
+}
+#about ul li{
+    margin-bottom: 10px;
+} 
+#about ul li i{
+    margin-right: 10px;
+}
+
+
+#service{
+    width: 90%;
+    padding: 80px;
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-top-right-radius: 45px ;
+    border-bottom-left-radius: 45px;
+}
+#service h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0px 0px 16px;
+}
+#service .card-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+#service .card-con .card{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 12px;
+    margin-top: 24px;
+}
+
+#service .card-con .card .img{
+    width: 80%;
+    height: 200px;
+    margin: 30px 0px;
+}
+#service .card-con .card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+#service .card-con .card button{
+    padding: 12px 18px ;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: aquamarine;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+#service .card-con .card button:hover{
+    background-color: rgb(39, 216, 157);
+
+}
+
+#contact{
+    width: 90%;
+    padding: 80px;
+    margin: 22px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #eee;
+    border-top-right-radius: 45px ;
+    border-bottom-left-radius: 45px;
+}
+
+#contact h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0px 0px 16px;
+}
+
+#contact form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact form input{
+    width: 80%;
+    padding: 12px;
+    border: 1px solid rgba(128, 128, 128, 0.445);
+    border-radius: 12px;
+    margin: 12px 0px;
+}
+#contact form input[type="submit"]{
+    background-color: crimson;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#contact form textarea{
+    width: 80%;
+    padding: 12px;
+    border: 1px solid rgba(128, 128, 128, 0.445);
+    border-radius: 12px;
+    margin: 12px 0px;
+}
+
+nav{
+    width: 100%;
+    background-color: cadetblue;
+    color: white;
+    padding: 16px 80px;
+    position: fixed;
+    bottom: 0;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: crimson ;
+    padding: 10px 18px;
+    border-radius: 14px;
+    transition: 0.3s ease;
+}
+
+nav ul a:hover{
+    background-color: rgb(196, 41, 72) ;
+    padding-bottom: 7px;
+}
+
+
+
+
+
+.price{
+    width: 90%;
+    padding:  80px;
+    margin-top: 22px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top-left-radius: 45px ;
+    border-bottom-right-radius: 45px;
+  }
+  .price h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0px 0px 16px;
+  }
+
+  .price .card-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .price .card-con .card{
+    width: 350px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    /* padding: 18px; */
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.price .card-con .card:nth-child(even) h4{
+ background: rgba(189, 187, 187, 0.432);
+ color: rgba(0, 0, 0, 0.692);
+}
+
+  .price .card-con .card h4{
+    width: 100%;
+    background:linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%);
+    padding: 12px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .price .card-con .card p{
+    width: 90%;
+    line-height: 30px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    text-align: center;
+    color: #000000c9;
+  }
+
+  .price .card-con .card .btn{
+    width: 100%;
+    margin-top: 25px ;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(156, 153, 153, 0.075);
+  }
+  .price .card-con .card .btn button{
+    background:linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%);
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+  }
+
+  .price .card-con .card .btn button:hover{
+    background:linear-gradient(45deg, rgba(87, 58, 250, 0.986) 0%, rgba(114, 15, 214, 0.705) 100%);
+  }
+
+
