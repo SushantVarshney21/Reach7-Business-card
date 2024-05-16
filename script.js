@@ -27,6 +27,17 @@ const goNext = ()=>{
 }
 
 
+    setInterval(()=>{
+            if(counter == slides.length-1){
+                counter = 0
+                slideImage()
+            }else{
+                counter++
+                slideImage()
+            }
+    },4000)
+    
+
 
 const slideImage = ()=>{
     slides.forEach((slide)=>{
