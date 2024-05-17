@@ -17,6 +17,7 @@ const goPrev= ()=>{
     }
 }
 const goNext = ()=>{
+    console.log("next")
     if(counter == slides.length-1){
         counter = 0
         slideImage()
@@ -43,4 +44,15 @@ const slideImage = ()=>{
     slides.forEach((slide)=>{
         slide.style.transform = `translateX(-${counter * 100}%)`
     })
+}
+
+
+let popup = document.getElementById("popup")
+
+function onPopup() {
+    popup.classList.add("op")
+}
+
+function closePopup(){
+    popup.classList.remove("op")
 }

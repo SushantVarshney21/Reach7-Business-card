@@ -18,11 +18,12 @@
             <img src="image/s2.jpg" alt="" class="slide">
             <img src="image/s3.jpg" alt="" class="slide">
             <img src="image/s4.jpg" alt="" class="slide">
+            <div class="btns">
+                <button onclick="goPrev()" class="pre">Prev</button>
+                <button onclick="goNext()" class="next">Next</button>
+            </div>
         </div>
-        <div class="btns">
-            <button onclick="goPrev()" class="pre">Prev</button>
-            <button onclick="goNext()" class="next">Next</button>
-        </div>
+
         <section id="hero">
             <div class="img">
                 <img src="image/logo.webp" alt="">
@@ -40,17 +41,37 @@
             <div class="info">
                 <p>Phone: +917498372484</p>
                 <p>Email: info@reach7.in </p>
-                <p>Shrikrupa Society, Balaji Residency, Flat No. 102, Lane No. 2, Near Orbis School, Keshav Nagar, Pune 411036</p>
+                <p>Shrikrupa Society, Balaji Residency, Flat No. 102, Lane No. 2, Near Orbis School, Keshav Nagar, Pune
+                    411036</p>
             </div>
             <form action="">
                 <div class="input">
-                    <input type="text" placeholder="Enter Whatsaap No."><input type="submit" value="Share On Whastsaap">
+                    <input type="text" placeholder="Enter Whatsapp No."><input type="submit" value="Share On Whastsapp">
                 </div>
-                <div class="btns">
+                <div class="hero-btns">
                     <a href=""><button>Save to contacts</button></a>
-                    <a href=""><button>Share</button></a>
                 </div>
+
             </form>
+            <button onclick="onPopup()">Share</button>
+            <div class="popup" id="popup">
+                <button onclick="closePopup()"><i class="fa-solid fa-circle-xmark"></i></button>
+                <h4>Share My Digital Card</h4>
+                <div class="icon-con">
+                    <div class="icon">
+                        <a href=""> <i class="fa-brands fa-square-whatsapp"></i> </a>
+                        <a href=""> <i class="fa-solid fa-message"></i></a>
+                    </div>
+                    <div class="icon">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="icon">
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="about">
             <h2>About</h2>
@@ -90,19 +111,22 @@
                         <img src="image/s3.jpg" alt="">
                     </div>
                     <a href=""><button>Enquiry Now</button></a>
-                </div><div class="card">
+                </div>
+                <div class="card">
                     <h3>Lead Generation Service</h3>
                     <div class="img">
                         <img src="image/lead.jpg" alt="">
                     </div>
                     <a href=""><button>Enquiry Now</button></a>
-                </div><div class="card">
+                </div>
+                <div class="card">
                     <h3>PPC Service</h3>
                     <div class="img">
                         <img src="image/ppc.jpg" alt="">
                     </div>
                     <a href=""><button>Enquiry Now</button></a>
-                </div><div class="card">
+                </div>
+                <div class="card">
                     <h3>Graphic Design</h3>
                     <div class="img">
                         <img src="image/grapic.jpg" alt="">
@@ -112,56 +136,136 @@
             </div>
         </section>
         <section id="price" class="price">
-            <h2>Pricing</h2>
+            <h2>Buy Services</h2>
             <div class="card-con">
-              <div class="card">
-                <h4>Facebook Package</h4>
-                <h3><sup>&#x20B9;</sup><strong>7999</strong> <sub>/Month</sub></h3>
-                <p>Facebook Page Optimzation </p>
-                <p>1 Social Cover Photo </p>
-                <p>8 Posts per month </p>
-                <p>Research and like relevant pages </p>
-                <div class="btn">
-                  <button>Order Now </button>
+                <div class="card">
+                    <h4>Facebook Package</h4>
+                    <h3><sup>&#x20B9;</sup><strong>7999</strong> <sub>/Month</sub></h3>
+                    <p>Facebook Page Optimzation </p>
+                    <p>1 Social Cover Photo </p>
+                    <p>8 Posts per month </p>
+                    <p>Research and like relevant pages </p>
+                    <div class="btn">
+                        <button>Order Now </button>
+                    </div>
                 </div>
-              </div>
-              <div class="card">
-                <h4>Instagram Package</h4>
-                <h3><sup>&#x20B9;</sup><strong>5999</strong> <sub>/Month</sub></h3>
-                <p>Profile Optimization </p>
-                <p>Instagram Image Sharing(8 Per Month) </p>
-                <p>Targeted Instagram Followers Increase</p>
-                <p>#Hashtag Trend Research </p>
-                <p>Comments & Likes Management </p>
-                <div class="btn">
-                  <button>Order Now </button>
+                <div class="card">
+                    <h4>Instagram Package</h4>
+                    <h3><sup>&#x20B9;</sup><strong>5999</strong> <sub>/Month</sub></h3>
+                    <p>Profile Optimization </p>
+                    <p>Instagram Image Sharing(8 Per Month) </p>
+                    <p>Targeted Instagram Followers Increase</p>
+                    <p>#Hashtag Trend Research </p>
+                    <p>Comments & Likes Management </p>
+                    <div class="btn">
+                        <button>Order Now </button>
+                    </div>
                 </div>
-              </div>
-              <div class="card">
-                <h4>LinkedIn Package </h4>
-                <h3><sup>&#x20B9;</sup><strong>5999</strong> <sub>/Month</sub></h3>
-                <p>Profile Setup & Optimization </p>
-                <p>Company Page Creation</p>
-                <p>Increase Company Page Follower</p>
-                <p>Interaction/Engagement </p>
-                <div class="btn">
-                  <button>Order Now </button>
+                <div class="card">
+                    <h4>LinkedIn Package </h4>
+                    <h3><sup>&#x20B9;</sup><strong>5999</strong> <sub>/Month</sub></h3>
+                    <p>Profile Setup & Optimization </p>
+                    <p>Company Page Creation</p>
+                    <p>Increase Company Page Follower</p>
+                    <p>Interaction/Engagement </p>
+                    <div class="btn">
+                        <button>Order Now </button>
+                    </div>
                 </div>
-              </div>
-              <div class="card">
-                <h4>Twitter Package </h4>
-                <h3><sup>&#x20B9;</sup><strong>5999</strong> <sub>/Month</sub></h3>
-                <p>Twitter Business Page Creation </p>
-                <p>Key Influencers Tracking </p>
-                <p>Infographics Creation (8 Posts) </p>
-                <p>#Hashtag Trend Research </p>
-                <p>Monitor Competitors Activities </p>
-                <div class="btn">
-                  <button>Order Now </button>
+                <div class="card">
+                    <h4>Twitter Package </h4>
+                    <h3><sup>&#x20B9;</sup><strong>5999</strong> <sub>/Month</sub></h3>
+                    <p>Twitter Business Page Creation </p>
+                    <p>Key Influencers Tracking </p>
+                    <p>Infographics Creation (8 Posts) </p>
+                    <p>#Hashtag Trend Research </p>
+                    <p>Monitor Competitors Activities </p>
+                    <div class="btn">
+                        <button>Order Now </button>
+                    </div>
                 </div>
-              </div>
             </div>
-          </section>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="card-con">
+                <div class="card">
+                    <img src="image/g1.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="image/g2.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="image/g3.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="image/g4.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="feedback">
+            <h2>Feedback</h2>
+            <form action="">
+                <div class="star">
+                    <h3>Select Star</h3>
+                    <input type="radio" name="rating1" id="rating1">
+                    <label for="rating1" class="fa fa-star"></label>
+                    <input type="radio" name="rating2" id="rating2">
+                    <label for="rating2" class="fa fa-star"></label>
+                    <input type="radio" name="rating3" id="rating3">
+                    <label for="rating3" class="fa fa-star"></label>
+                    <input type="radio" name="rating4" id="rating4">
+                    <label for="rating4" class="fa fa-star"></label>
+                    <input type="radio" name="rating5" id="rating5">
+                    <label for="rating5" class="fa fa-star"></label>
+                </div>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <input type="text" placeholder="Contact No.">
+                <textarea name="" id="" cols="10" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Submit Feedback">
+                <p>Note: for privecy and security reasons we do not show your contact details. For more info you can
+                    contact admin or your franchisee.</p>
+            </form>
+            <div class="show-feed">
+                <h4>Latest Feedback</h4>
+                <div class="card-con">
+                    <div class="card">
+                        <div class="star-icon">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>5/5</p>
+                        <h5>Nice!</h5>
+                        <h6>By:John</h6>
+                    </div>
+                    <div class="card">
+                        <div class="star-icon">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>4/5</p>
+                        <h5>Good</h5>
+                        <h6>By:Lara</h6>
+                    </div>
+                    <div class="card">
+                        <div class="star-icon">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>3/5</p>
+                        <h5>Some Improvment</h5>
+                        <h6>By:Max</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="contact">
             <h2>Contact Us</h2>
             <form action="">
@@ -175,11 +279,21 @@
     </div>
     <nav>
         <ul>
-            <a href="#slider"><li>Home</li></a>
-            <a href="#about"><li>About</li></a>
-            <a href="#service"><li>Services</li></a>
-            <a href="#price"><li>Pricing</li></a>
-            <a href="#contact"><li>Contact</li></a>
+            <a href="#slider"><i class="fa-solid fa-house"></i>
+                <li>Home</li>
+            </a>
+            <a href="#about"><i class="fa-solid fa-address-card"></i>
+                <li>About</li>
+            </a>
+            <a href="#service"><i class="fa-solid fa-ticket"></i>
+                <li>Services</li>
+            </a>
+            <a href="#price"><i class="fa-solid fa-shop"></i>
+                <li>Shop</li>
+            </a>
+            <a href="#contact"><i class="fa-solid fa-message"></i>
+                <li>Contact</li>
+            </a>
         </ul>
     </nav>
     <script src="script.js"></script>
