@@ -369,7 +369,6 @@ body , html{
     width: 90%;
     padding: 80px;
     margin: 22px 0px;
-    margin-bottom: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -377,7 +376,6 @@ body , html{
     background-color: #eee;
     border-top-right-radius: 45px ;
     border-bottom-left-radius: 45px;
-   
 }
 
 #contact h2{
@@ -423,6 +421,53 @@ body , html{
     background-color: #000;
     color: #fff;
     padding: 12px;
+}
+
+#link{
+    padding: 80px;
+    margin-top: 22px;
+    width: 90%;
+    background-color: aliceblue;
+    border-top-left-radius: 45px ;
+    border-bottom-right-radius: 45px;
+    margin-bottom: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#link h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0px 0px 16px;
+}
+#link ul{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 22px;
+}
+#link a{
+    color: #000;
+    text-align: left;
+    text-decoration: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#link .by{
+    width: 80%;
+    position: absolute;
+    font-size: 12px;
+    margin-top: 25px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    bottom: 5%;
 }
 
 #feedback{
@@ -567,7 +612,7 @@ body , html{
 
 nav{
     width: 100%;
-    background-color: cadetblue;
+    background-color: #395E60;
     color: white;
     padding: 16px 80px;
     position: fixed;
@@ -594,9 +639,8 @@ nav ul a{
     flex-direction: column;
 }
 
-nav ul a:hover{
-    background-color: rgb(196, 41, 72) ;
-    padding-bottom: 7px;
+nav ul a:active{
+    scale: 0.6;
 }
 
 
@@ -614,7 +658,9 @@ nav ul a:hover{
     flex-direction: column;
     border-top-left-radius: 45px ;
     border-bottom-right-radius: 45px;
+    position: relative;
   }
+
   .price h2{
     font-size: 35px;
     font-weight: bold;
@@ -654,6 +700,7 @@ nav ul a:hover{
     color: #fff;
     font-size: 25px;
     font-weight: 700;
+    text-align: center;
   }
 
   .price .card-con .card p{
@@ -672,20 +719,89 @@ nav ul a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-color: rgba(156, 153, 153, 0.075);
   }
   .price .card-con .card .btn button{
-    background:linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%);
+    /* background:linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%); */
+    background-color: aquamarine;
     padding: 12px 25px;
+    margin-top: 12px;
     font-size: 18px;
+    font-weight: bold;
     border: none;
     border-radius: 4px;
-    color: #fff;
     cursor: pointer;
   }
 
   .price .card-con .card .btn button:hover{
-    background:linear-gradient(45deg, rgba(87, 58, 250, 0.986) 0%, rgba(114, 15, 214, 0.705) 100%);
+    background-color: rgb(39, 216, 157);
+
+  }
+
+  .buy-popup{
+    background-color:#eee;
+    width: 400px;
+    padding: 16px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s , top 0.4s;
+  }
+  .buy-op{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .buy-popup h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 12px 0px;
+  }
+  .buy-popup button{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .buy-popup select{
+    padding: 12px;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.527);
+    outline: none;
+    margin: 6px 0px;
+    border-radius: 12px;
+  }
+
+  .buy-popup form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .buy-popup form input{
+    padding: 12px;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.527);
+    outline: none;
+    margin: 6px 0px;
+    border-radius: 12px;
+  }
+  .buy-popup form input[type="submit"]{
+    background-color: aquamarine;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
   }
 
   #gallery{
@@ -773,6 +889,9 @@ nav ul a:hover{
         width: 90%;
     }
     #contact{
+        padding: 80px 60px;
+    }
+    #linK{
         padding: 80px 60px;
     }
     nav{

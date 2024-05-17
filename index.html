@@ -13,6 +13,8 @@
 
 <body>
     <div id="main">
+
+        <!-- slider Start -->
         <div id="slider" class="slide-con">
             <img src="image/s1.jpg" alt="" class="slide">
             <img src="image/s2.jpg" alt="" class="slide">
@@ -23,7 +25,9 @@
                 <button onclick="goNext()" class="next">Next</button>
             </div>
         </div>
+        <!-- slider end -->
 
+        <!-- Hero Start -->
         <section id="hero">
             <div class="img">
                 <img src="image/logo.webp" alt="">
@@ -32,11 +36,11 @@
             <h4>Rech7</h4>
             <p>Company</p>
             <div class="social-icon">
-                <a href=""><i class="fa-solid fa-phone"></i></a>
-                <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
-                <a href=""><i class="fa-solid fa-location-dot"></i></a>
-                <a href=""><i class="fa-solid fa-envelope"></i></a>
-                <a href=""><i class="fa-solid fa-globe"></i></a>
+                <a href="tel:+917498372484" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                <a href="//api.whatsapp.com/send?phone=917498372484" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="https://maps.app.goo.gl/J7RsAQeFuAUst1Hf9" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                <a href="info@reach7.in" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://maps.app.goo.gl/J7RsAQeFuAUst1Hf9" target="_blank"><i class="fa-solid fa-globe"></i></a>
             </div>
             <div class="info">
                 <p>Phone: +917498372484</p>
@@ -59,20 +63,23 @@
                 <h4>Share My Digital Card</h4>
                 <div class="icon-con">
                     <div class="icon">
-                        <a href=""> <i class="fa-brands fa-square-whatsapp"></i> </a>
-                        <a href=""> <i class="fa-solid fa-message"></i></a>
+                        <a href="https://web.whatsapp.com/" target="_blank"> <i class="fa-brands fa-square-whatsapp"></i> </a>
+                        <a href="sms:" target="_blank"> <i class="fa-solid fa-message"></i></a>
                     </div>
                     <div class="icon">
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/login/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/twitt_login" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
                     </div>
                     <div class="icon">
-                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                        <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Hero End -->
+
+        <!-- About Start -->
         <section id="about">
             <h2>About</h2>
             <p>Reach7 Digital Solutions Pvt. Ltd. is a client-focused and one of the leading digital agencies based out
@@ -88,6 +95,9 @@
                 <li><i class="fa-regular fa-circle-check"></i>Landing Page Creation </li>
             </ul>
         </section>
+        <!-- About End -->
+
+        <!-- Service Start -->
         <section id="service">
             <h2>Services</h2>
             <div class="card-con">
@@ -96,47 +106,75 @@
                     <div class="img">
                         <img src="image/web.jpg" alt="">
                     </div>
-                    <a href=""><button>Enquiry Now</button></a>
+                    <a href="//api.whatsapp.com/send?phone=917498372484" target="_blank"><button>Enquiry
+                            Now</button></a>
                 </div>
                 <div class="card">
                     <h3>Digital Marketing</h3>
                     <div class="img">
                         <img src="image/s1.jpg" alt="">
                     </div>
-                    <a href=""><button>Enquiry Now</button></a>
+                    <a href="//api.whatsapp.com/send?phone=917498372484" target="_blank"><button>Enquiry
+                            Now</button></a>
                 </div>
                 <div class="card">
                     <h3>SEO</h3>
                     <div class="img">
                         <img src="image/s3.jpg" alt="">
                     </div>
-                    <a href=""><button>Enquiry Now</button></a>
+                    <a href="//api.whatsapp.com/send?phone=917498372484" target="_blank" button>Enquiry Now</button></a>
                 </div>
                 <div class="card">
                     <h3>Lead Generation Service</h3>
                     <div class="img">
                         <img src="image/lead.jpg" alt="">
                     </div>
-                    <a href=""><button>Enquiry Now</button></a>
+                    <a href="//api.whatsapp.com/send?phone=917498372484" target="_blank"><button>Enquiry
+                            Now</button></a>
                 </div>
                 <div class="card">
                     <h3>PPC Service</h3>
                     <div class="img">
                         <img src="image/ppc.jpg" alt="">
                     </div>
-                    <a href=""><button>Enquiry Now</button></a>
+                    <a href="//api.whatsapp.com/send?phone=917498372484" target="_blank"><button>Enquiry
+                            Now</button></a>
                 </div>
                 <div class="card">
                     <h3>Graphic Design</h3>
                     <div class="img">
                         <img src="image/grapic.jpg" alt="">
                     </div>
-                    <a href=""><button>Enquiry Now</button></a>
+                    <a href="//api.whatsapp.com/send?phone=917498372484" target="_blank"><button>Enquiry
+                            Now</button></a>
                 </div>
             </div>
         </section>
+        <!-- Service End -->
+
+        <!-- Shop Start -->
         <section id="price" class="price">
             <h2>Buy Services</h2>
+            <div class="buy-popup" id="buy-popup">
+                <button onclick="closeBuyPopup()"><i class="fa-solid fa-circle-xmark"></i></button>
+                <h4>Payment Type</h4>
+                <select name="" id="">
+                    <option value="select">Select</option>
+                    <option value="Online">Online</option>
+                    <option value="COD">COD</option>
+                </select>
+                <h4>Your Address Details</h4>
+                <form action="">
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="text" placeholder="Enter Contact No.">
+                    <input type="email" placeholder="Enter Your Email">
+                    <input type="text" placeholder="Street Address">
+                    <input type="text" placeholder="City">
+                    <input type="text" placeholder="State">
+                    <input type="text" placeholder="pin code / postal code">
+                    <input type="submit" value="Place Order">
+                </form>
+            </div>
             <div class="card-con">
                 <div class="card">
                     <h4>Facebook Package</h4>
@@ -146,7 +184,9 @@
                     <p>8 Posts per month </p>
                     <p>Research and like relevant pages </p>
                     <div class="btn">
-                        <button>Order Now </button>
+                        <button onclick="onBuyPopup()">Buy Now </button>
+                        <a href="//api.whatsapp.com/send?phone=917498372484" target="_blank"> <button>Enquiry
+                                Now</button></a>
                     </div>
                 </div>
                 <div class="card">
@@ -158,7 +198,9 @@
                     <p>#Hashtag Trend Research </p>
                     <p>Comments & Likes Management </p>
                     <div class="btn">
-                        <button>Order Now </button>
+                        <button onclick="onBuyPopup()">Buy Now </button>
+                        <a href="//api.whatsapp.com/send?phone=917498372484" target="_blank"> <button>Enquiry
+                                Now</button></a>
                     </div>
                 </div>
                 <div class="card">
@@ -169,7 +211,9 @@
                     <p>Increase Company Page Follower</p>
                     <p>Interaction/Engagement </p>
                     <div class="btn">
-                        <button>Order Now </button>
+                        <button onclick="onBuyPopup()">Buy Now </button>
+                        <a href="//api.whatsapp.com/send?phone=917498372484" target="_blank"> <button>Enquiry
+                                Now</button></a>
                     </div>
                 </div>
                 <div class="card">
@@ -181,11 +225,16 @@
                     <p>#Hashtag Trend Research </p>
                     <p>Monitor Competitors Activities </p>
                     <div class="btn">
-                        <button>Order Now </button>
+                        <button onclick="onBuyPopup()">Buy Now </button>
+                        <a href="//api.whatsapp.com/send?phone=917498372484" target="_blank"> <button>Enquiry
+                                Now</button></a>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Shop End -->
+
+        <!-- Gallery Start -->
         <section id="gallery">
             <h2>Gallery</h2>
             <div class="card-con">
@@ -203,6 +252,9 @@
                 </div>
             </div>
         </section>
+        <!-- Gallery End -->
+
+        <!-- Feedback Start -->
         <section id="feedback">
             <h2>Feedback</h2>
             <form action="">
@@ -266,6 +318,9 @@
                 </div>
             </div>
         </section>
+        <!-- Feedback End -->
+
+        <!-- Contact Start -->
         <section id="contact">
             <h2>Contact Us</h2>
             <form action="">
@@ -275,9 +330,23 @@
                 <textarea name="" id="" placeholder="Enter Message"></textarea>
                 <input type="submit" value="Send!">
             </form>
-            <div class="by">Design and Created By: Reach7 Solutions</div>
         </section>
+        <!-- Contact End -->
+
+        <!-- Link Start -->
+        <div id="link">
+            <h2>Links</h2>
+            <ul>
+                <a href="">
+                    <li>Reach7</li>
+                </a>
+            </ul>
+            <div class="by">Design and Created By: Reach7 Solutions</div>
+        </div>
+        <!-- Link End -->
     </div>
+
+    <!-- Navbar Start -->
     <nav>
         <ul>
             <a href="#slider"><i class="fa-solid fa-house"></i>
@@ -292,11 +361,15 @@
             <a href="#price"><i class="fa-solid fa-shop"></i>
                 <li>Shop</li>
             </a>
+            <a href="#gallery"><i class="fa-regular fa-image"></i>
+                <li>Gallery</li>
+            </a>
             <a href="#contact"><i class="fa-solid fa-message"></i>
                 <li>Contact</li>
             </a>
         </ul>
     </nav>
+    <!-- Navbar End -->
     <script src="script.js"></script>
 </body>
 

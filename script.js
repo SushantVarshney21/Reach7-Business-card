@@ -56,3 +56,14 @@ function onPopup() {
 function closePopup(){
     popup.classList.remove("op")
 }
+
+let buyPopup = document.getElementById("buy-popup")
+
+function onBuyPopup() {
+    buyPopup.classList.add("buy-op")
+    console.log("add list")
+}
+
+function closeBuyPopup(){
+    buyPopup.classList.remove("buy-op")
+}
