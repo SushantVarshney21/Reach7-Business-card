@@ -751,6 +751,9 @@ nav ul a:hover{
     #service{
         padding: 80px 60px;
     }
+    #feedback{
+        padding: 80px 60px;
+    }
     #service .card-con .card .img{
         width: 90%;
     }
